@@ -1,0 +1,96 @@
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/@zeit-ui/style@0.9.3/dist/style.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css" />
+<style>
+
+#leftcontentcontainer,
+#blog-calendar,
+#blogTitle h2,
+.blogStats,
+.dayTitle,
+.catListTitle,
+#blog-news,
+#comment_form,
+#blog_post_info_block {
+  display: none!important
+}
+#navList,
+#header,
+#blogTitle {
+  display: flex!important
+}
+#navList li {
+  margin: 10px
+}
+#navList {
+  margin-top: 20px
+}
+#blogTitle h1 a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul>li:before {
+  content: "/";
+  position: unset;
+  color: #d400ff;
+}
+#navList li {
+  margin: 8px 24px;
+}
+#navList li a {
+  color: #d400ff
+}
+.postTitle {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  font-size: 1.485714285714286rem
+}
+.postCon {
+  font-size: 1rem;
+  color: #999;
+}
+.postDesc {
+  text-transform: uppercase;
+  color: #d400ff;
+  font-size: .88rem;
+}
+.day {
+  margin: 10px
+}
+#cnblogs_post_body ul li:before {
+  all: unset
+}
+.markdown-body .highlight pre, 
+.markdown-body pre {
+  padding: 6px!important;
+}
+.cnblogs-markdown .hljs, 
+.cnblogs-post-body .hljs {
+  border: none!important;
+  background: transparent!important;
+}
+#MySignature {
+    display: block;
+    margin: 10px;
+    color: #d400ff;
+}
+</style>
+<script>
+   var title =  'd1yの奇思妙想'
+   ;(function() {
+      var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+      link.type = 'image/x-icon';
+      link.rel = 'shortcut icon';
+      link.href = 'https://github.com/favicon.ico';
+      document.getElementsByTagName('head')[0].appendChild(link);
+   })();
+   $('title').html(title)
+   $('#home').addClass('zi-main zi-layout')
+   $('#blogTitle h1 a').html(title)
+   $('#footer').html(`
+  <p>
+    <img src="https://catbox.moe/pictures/logo.png" />
+  </p>
+  <code>copyright 2019 - <a href="https://github.com/d1y">d1y</a></code>
+  `)
+   $('.post .postBody').addClass('markdown-body')
+</script>
